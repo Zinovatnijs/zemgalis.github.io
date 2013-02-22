@@ -41,7 +41,11 @@ fieldset {
   padding: 15px;
 }
 
-#footer, #contact {
+#media {
+  margin: 0 auto;
+} 
+
+#contact {
   margin: 10px auto;
 }
 
@@ -63,6 +67,16 @@ li {
  font-size: 1.2em;
 }
 
+.copyright {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: #505050;
+}
+
 </style>
 <script type="text/javascript">
 
@@ -79,6 +93,7 @@ li {
 </script>
 </head>
 <body>
+
 <div id="content" >
 <div id="header">
 <h1>Maris Zemgalis</h1>
@@ -96,7 +111,14 @@ li {
   <a href="http://github.com/zemgalis"  title="Find me on GitHub"><img src="media/github_icon.png"  width="45" height="45" alt="" title=""></a>
 </div>
 </div>
-<hr>
+</div>
+
+<div id="media">
+<img src="media/image.gif" width="724" height="429" alt="">
+<p class="copyright">&copy; Created by Jamie Beck &amp; Kevin Burg - <a href="http://cinemagraphs.com/" title="Cinemagraphs">Cinemagraphs.com</a></p>
+</div>
+
+<!--
 <fieldset>
 <legend><span class="highlight">Expertise</span></legend>
 <ul class="list">
@@ -108,10 +130,7 @@ li {
 <li><abbr title="Payment Card Industry Data Security Standard">PCI DSS</abbr></li>
 </ul>
 </fieldset>
-</div>
-<div id="footer">
-<img src="media/image.gif" width="724" height="429" alt="">
-  <p>Created by Jamie Beck &amp; Kevin Burg - <a href="http://cinemagraphs.com/" title="Cinemagraphs">Cinemagraphs.com</a></p>
-</div>
+-->
+
 </body>
 </html>
