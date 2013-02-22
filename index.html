@@ -17,6 +17,10 @@ body {
   font-size: 1em;
 }
 
+abbr {
+  font-size: 0.8em;
+}
+
 h1, h2, h3, ul {
   margin: 0;
   padding: 0;
@@ -34,9 +38,9 @@ fieldset {
   border-style: none; 
 }
 
-#content {
+.content {
   text-align: left;
-  width: 500px;
+  width: 600px;
   margin: 0px auto;
   padding: 15px;
 }
@@ -94,7 +98,7 @@ li {
 </head>
 <body>
 
-<div id="content" >
+<div class="content" >
 <div id="header">
 <h1>Maris Zemgalis</h1>
 <h2>Software Developer</h2>
@@ -118,19 +122,40 @@ li {
 <p class="copyright">&copy; Created by Jamie Beck &amp; Kevin Burg - <a href="http://cinemagraphs.com/" title="Cinemagraphs">Cinemagraphs.com</a></p>
 </div>
 
-<!--
-<fieldset>
-<legend><span class="highlight">Expertise</span></legend>
-<ul class="list">
-<li><abbr title="Business Process Management">BPM</abbr></li>
-<li><abbr title="Customer Relationship Management">CRM</abbr></li>
-<li><abbr title="Enterprise Content Management">ECM</abbr></li>
-<li><abbr title="Enterprise Resource Planning">ERP</abbr></li>
-<li><abbr title="Geographic Information System">GIS</abbr></li>
-<li><abbr title="Payment Card Industry Data Security Standard">PCI DSS</abbr></li>
-</ul>
-</fieldset>
--->
+<div class="content">
+<div id="tabs">
+  <ul>
+    <li><a href="#code">Code</a></li>
+    <li><a href="#expertise">Expertise</a></li>
+  </ul>
+  <div id="code">
+   <ul class="list">
+    <li><abbr title="JavaScript makes websites interactive">JavaScript</abbr></li>
+    <li><abbr title="HyperText Markup Language">HTML</abbr></li>
+    <li><abbr title="Cascading Style Sheets">CSS</abbr></li>
+    <li><abbr title="Python programming language">Python</abbr></li>
+    <li><abbr title="Ruby programming language">Ruby</abbr></li>
+    <li><abbr title="Application Programming Interfaces">APIs</abbr></li>
+   </ul>
+  </div>
 
+  <div id="expertise">
+   <ul class="list">
+    <li><abbr title="Business Process Management">BPM</abbr></li>
+    <li><abbr title="Customer Relationship Management">CRM</abbr></li>
+    <li><abbr title="Enterprise Content Management">ECM</abbr></li>
+    <li><abbr title="Enterprise Resource Planning">ERP</abbr></li>
+    <li><abbr title="Geographic Information System">GIS</abbr></li>
+    <li><abbr title="Payment Card Industry Data Security Standard">PCI DSS</abbr></li>
+   </ul>
+  </div>
+</div>
+</div>
+
+<script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
 </body>
 </html>
