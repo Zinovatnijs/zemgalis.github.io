@@ -17,7 +17,7 @@ body {
   font-size: 1em;
 }
 
-abbr {
+abbr, .list li a {
   font-size: 0.8em;
 }
 
@@ -130,29 +130,33 @@ li {
   </ul>
   <div id="code">
    <ul class="list">
-    <li><abbr title="JavaScript makes websites interactive">JavaScript</abbr></li>
-    <li><abbr title="HyperText Markup Language">HTML</abbr></li>
-    <li><abbr title="Cascading Style Sheets">CSS</abbr></li>
-    <li><abbr title="Python programming language">Python</abbr></li>
-    <li><abbr title="Ruby programming language">Ruby</abbr></li>
-    <li><abbr title="Application Programming Interfaces">APIs</abbr></li>
+    <li><a href="#" title="JavaScript makes websites interactive">JavaScript</a></li>
+    <li><a href="#" title="HyperText Markup Language">HTML</a></li>
+    <li><a href="#" title="Cascading Style Sheets">CSS</a></li>
+    <li><a href="#" title="Python programming language">Python</a></li>
+    <li><a href="#" title="Ruby programming language">Ruby</a></li>
+    <li><a href="#" title="Application Programming Interfaces">APIs</a></li>
    </ul>
   </div>
 
   <div id="expertise">
    <ul class="list">
-    <li><abbr title="Business Process Management">BPM</abbr></li>
-    <li><abbr title="Customer Relationship Management">CRM</abbr></li>
-    <li><abbr title="Enterprise Content Management">ECM</abbr></li>
-    <li><abbr title="Enterprise Resource Planning">ERP</abbr></li>
-    <li><abbr title="Geographic Information System">GIS</abbr></li>
-    <li><abbr title="Payment Card Industry Data Security Standard">PCI DSS</abbr></li>
+    <li><a href="#" title="Business Process Management">BPM</a></li>
+    <li><a href="#" title="Customer Relationship Management">CRM</a></li>
+    <li><a href="#" title="Enterprise Content Management">ECM</a></li>
+    <li><a href="#" title="Enterprise Resource Planning">ERP</a></li>
+    <li><a href="#" title="Geographic Information System">GIS</a></li>
+    <li><a href="#" title="Payment Card Industry Data Security Standard">PCI DSS</a></li>
    </ul>
   </div>
 </div>
 </div>
 
 <script>
+ $(function() {
+    $( document ).tooltip();
+  });
+
   $(function() {
     $( "#tabs" ).tabs();
   });
