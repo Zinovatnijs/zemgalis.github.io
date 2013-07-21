@@ -5,10 +5,9 @@ html(lang="en")
         meta(name="author", content="Maris Zemgalis")
         meta(name="description", content="Maris Zemgalis is a software developer with solid expertise in BPM - Business Process Management, CRM - Customer Relationship Management, ECM - Enterprise Content Management, ERP - Enterprise Resource Planning, GIS - Geographic Information Systems, PCI DSS - Payment Card Industry Data Security Standard.")
         title= "Maris Zemgalis - Software Developer"
-        link(href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css", rel="stylesheet", type="text/css")
+        link(href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css", rel="stylesheet")
+        link(href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", rel="stylesheet")
         link(href="style.css", rel="stylesheet", type="text/css")
-        script(src="http://code.jquery.com/jquery-1.9.1.js")
-        script(src="http://code.jquery.com/ui/1.10.1/jquery-ui.js")
         script.
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-37485821-1']);
@@ -21,68 +20,15 @@ html(lang="en")
             })();
     body
         #content
-            #header
-            h1 Maris Zemgalis
-            h2 Software Developer
-            hr
-            // LinkedIn
-            div
-                a(href="http://lv.linkedin.com/in/zemgalis")
-                    img(src="http://www.linkedin.com/img/webpromo/btn_myprofile_160x33.png", width="160", height="33", alt="View Maris Zemgalis's profile on LinkedIn")
-            // Contact
+            header
+                h1 Maris Zemgalis
+                h2 Software Developer
             #contact
-                a(href="mailto:maris.zemgalis@gmail.com")
-                    img(src="media/email_icon.png", width="60", height="60", alt="", title="")
-                a(href="http://twitter.com/zemgalis", title="Follow me on Twitter")
-                    img(src="media/twitter_icon.png", width="60", height="60", alt="", title="")
-                a(href="http://github.com/zemgalis", title="Find me on GitHub")
-                    img(src="media/github_icon.png", width="60", height="60", alt="", title="")
-            
-            .content
-                // Tabs
-                #tabs
-                    ul
-                        li
-                            a(href="#expertise") Expertise Areas
-                        li
-                            a(href="#code") Coding Skills
-                    #expertise
-                        ul.list
-                            li
-                                a(href="#", title="Business Process Management") BPM
-                            li
-                                a(href="#", title="Customer Relationship Management") CRM
-                            li
-                                a(href="#", title="Enterprise Content Management") ECM
-                            li
-                                a(href="#", title="Enterprise Resource Planning") ERP
-                            li 
-                                a(href="#", title="Geographic Information System") GIS
-                            li
-                                a(href="#", title="Payment Card Industry Data Security Standard") PCI DSS 
-                    #code
-                        ul.list
-                            li
-                                a(href="#", title="JavaScript makes websites interactive") JavaScript
-                            li
-                                a(href="#", title="PHP programming language") PHP
-                            li
-                                a(href="#", title="Python programming language") Python
-                            li
-                                a(href="#", title="Ruby programming language") Ruby
-                            li
-                                a(href="#", title="Application Programming Interfaces") APIs
-                //  Media
-                #media
-                    img(src="media/image.gif", width="724", height="429", alt="")
-                    p.copyright &copy; Created by Jamie Beck &amp; Kevin Burg - 
-                        a(href="http://cinemagraphs.com/", title="Cinemagraphs", target="_blank") Cinemagraphs.com
-            
-        script.
-            $(function () {
-                $( document ).tooltip();
-            });
+                a(href="http://lv.linkedin.com/in/zemgalis", title="LinkedIn")
+                    i.icon-linkedin-sign.icon-5x
+                a(href="http://twitter.com/zemgalis", title="Twitter")
+                    i.icon-twitter-sign.icon-5x
+                a(href="http://github.com/zemgalis", title="GitHub")
+                    i.icon-github-sign.icon-5x
 
-            $(function () {
-                $( "#tabs" ).tabs();
-            });
+            
